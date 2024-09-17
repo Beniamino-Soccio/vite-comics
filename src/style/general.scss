@@ -1,6 +1,6 @@
 *{
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
     box-sizing: border-box;
 }
 body{
@@ -15,4 +15,11 @@ a{
 }
 img{
     max-width: 100%;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+main{
+    color: white;
 }
