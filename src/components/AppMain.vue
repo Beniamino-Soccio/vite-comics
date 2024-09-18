@@ -15,10 +15,16 @@ export default{
 
 <template>
     <main>
-
+        <div class="jumbotron">
+            <span>CURRENT SERIES</span>
+        </div>
         <div class="bg-black">
             <section class="main-content container">
                 <MainComicsList/>
+                <div class="button-load">
+                    <a href="#">LOAD MORE</a>
+                </div>
+                
             </section>
         </div>
 
@@ -48,7 +54,7 @@ img{
     max-width: 70px;
     max-height: 70px;
 }
-a{
+.main-links a{
     display: flex;
     align-items: center;
     gap: 5px;
@@ -65,4 +71,30 @@ ul{
     padding: 0 50px;
     font-size: 14px;
 }
+.button-load{
+    display: flex;
+    justify-content: center;
+}
+.button-load a{
+    color: white;
+    padding: 10px 40px;
+    background-color: dodgerblue;
+    
+}
+.main-content{
+    padding-bottom: 20px;
+}
+.jumbotron{
+    background-image: url(../assets/img/jumbotron.jpg);
+    height: 400px;
+    position: relative;
+}
+.jumbotron span{
+        color: white;
+        padding: 8px 20px;
+        background-color: dodgerblue;
+        position: absolute;
+        bottom: -15px;
+        left: 280px;
+    }
 </style>
