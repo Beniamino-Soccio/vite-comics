@@ -41,9 +41,6 @@ export default{
 .bg-black{
     background-color: #000;  
 }
-.main-content{
-    height: 180px;
-}
 .bg-blue{
     background-color: dodgerblue;
 }

@@ -86,9 +86,19 @@ export default{
 </script>
 
 <template>
-  <MainComicsListCard/>
+    <ul>
+        <MainComicsListCard v-for="(comic, index) in comics" :key="index"
+          :comicUrl="comic.thumb" :comicPrice="comic.price" :comicSeries="comic.series" :comicType="comic.type"
+        />  
+    </ul>
 </template>
 
 <style lang="scss" scoped>
+    ul{
+        padding: 50px 0;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
 
+    }
 </style>
