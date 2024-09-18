@@ -1,9 +1,14 @@
 <script>
+import MainComicsList from './MainComicsList.vue';
+
 export default{
     data(){
         return{
             
         }
+    },
+    components:{
+        MainComicsList,
     }
 }
 </script>
@@ -13,7 +18,7 @@ export default{
 
         <div class="bg-black">
             <section class="main-content container">
-                <p>content goes here</p>
+                <MainComicsList/>
             </section>
         </div>
 
